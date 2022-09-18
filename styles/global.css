@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities {
+@layer components {
   .wrapper {
     width: min(1320px, 100vw - 2rem);
     margin-inline: auto;
+    p {
+      color: red;
+    }
   }
 }
