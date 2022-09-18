@@ -3,9 +3,11 @@ import Footer from "../components/footer";
 
 export default function Layout({ children }) {
   return (
-    <div className="max-w-7xl mx-auto">
+    <div className="min-h-screen grid grid-rows-[auto_1fr_auto]">
       <Header />
-      <main>{children}</main>
+      <main className="bg-[yellow]">
+        <div className="wrapper">{children}</div>
+      </main>
       <Footer />
     </div>
   );

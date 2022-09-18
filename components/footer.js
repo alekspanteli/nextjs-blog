@@ -1,7 +1,11 @@
 export default function Footer() {
   return (
     <>
-      <footer>&copy; {new Date().getFullYear()} Footer goes here</footer>
+      <footer className="bg-[green] py-5">
+        <div className="wrapper">
+          &copy; {new Date().getFullYear()} Footer goes here
+        </div>
+      </footer>
     </>
   );
 }
