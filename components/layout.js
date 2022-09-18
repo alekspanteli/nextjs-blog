@@ -1,25 +1,12 @@
-import Head from "next/head";
-import Link from "next/link";
+import Header from "../components/header";
+import Footer from "../components/footer";
 
-export default function Layout({ children, home }) {
+export default function Layout({ children }) {
   return (
     <div className="max-w-7xl mx-auto">
-      <Head>
-        <meta
-          name="description"
-          content="Learn how to build a personal website using Next.js"
-        />
-      </Head>
-      <header>Header goes here</header>
+      <Header />
       <main>{children}</main>
-      {!home && (
-        <div>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-      <footer>&copy; {new Date().getFullYear()} Footer goes here</footer>
+      <Footer />
     </div>
   );
 }

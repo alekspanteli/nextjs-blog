@@ -1,15 +1,15 @@
 import Head from "next/head";
 import Layout from "../components/layout";
 
-export default function Home() {
+export default function About() {
   return (
     <>
       <Layout home>
         <Head>
-          <title>Home page</title>
+          <title>About page</title>
         </Head>
         <section>
-          <p>I am front end developer</p>
+          <h1>About Us</h1>
         </section>
       </Layout>
     </>
