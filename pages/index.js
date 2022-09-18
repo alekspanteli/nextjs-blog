@@ -9,13 +9,16 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <p>
-        Read <Link href="/posts/first-post">this page!</Link>
+      <p className="font-bold font-serif text-xs antialiased ">
+        Read{" "}
+        <Link href="/posts/first-post">
+          <a className="text-[#50d71e]">this page!</a>
+        </Link>
       </p>
       <Image
-        src="/images/profile.webp" // Route of the image file
-        height={256} // Desired size with correct aspect ratio
-        width={256} // Desired size with correct aspect ratio
+        src="/images/gallery.avif" // Route of the image file
+        height={500} // Desired size with correct aspect ratio
+        width={500} // Desired size with correct aspect ratio
         alt="Alex Panteli"
       />
     </div>
